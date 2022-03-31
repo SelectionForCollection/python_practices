@@ -2,10 +2,6 @@ class HTML:
     resultCode = []
     tab = ''
 
-    def makeTab(self, tab):
-        tab += '    '
-        return tab
-
     def __init__(self):
         HTML.resultCode = []
 
@@ -13,7 +9,7 @@ class HTML:
 
         def __enter__(self):
             HTML.resultCode.append("<body>")
-            HTML.tab = HTML.makeTab(self, HTML.tab)
+            HTML.tab += '    '
 
         def __exit__(self, *args, **kwargs):
             HTML.resultCode.append("</body>")
@@ -23,14 +19,13 @@ class HTML:
 
         def __enter__(self):
             HTML.resultCode.append(HTML.tab + "<div>")
-            HTML.tab = HTML.makeTab(self, HTML.tab)
+            HTML.tab += '    '
 
         def __exit__(self, *args, **kwargs):
             self.count += 1
             for i in range(0, self.count):
                 HTML.tab = HTML.tab[:-4]
             HTML.resultCode.append(HTML.tab + "</div>")
-
 
     def p(self, value):
         tag = HTML.tab + "<p>" + value + "</p>"
@@ -53,8 +48,9 @@ with html.body():
             html.p('Вторая строка.')
         with html.div():
             html.p('Третья строка.')
+            with html.div():
+                html.p('opop')
     with html.div():
         html.p('sdfjfsjsjfjnf')
-
 
 print(html.get_code())
