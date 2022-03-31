@@ -16,4 +16,4 @@
 С помощью графиков ответьте на следующие вопросы:
   1. Какие годы были самыми популярными с точки зрения выхода игр?
   2. Какие жанры были популярны в различные периоды времени?
-### [РЕШЕНИЕ](https://github.com/SelectionForCollection/python_practices/blob/main/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D1%8B%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F/task11.py)
+#### [РЕШЕНИЕ](https://github.com/SelectionForCollection/python_practices/blob/main/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D1%8B%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F/task11.py)
